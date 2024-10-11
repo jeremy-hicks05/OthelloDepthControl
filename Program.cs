@@ -33,8 +33,8 @@ namespace OthelloAStar
 
                 game.Board.CheckWinner();
 
-                Space move = ai.GetBestMove(game.Board, Piece.Type.White);
-                //Space move = game.GetMove(currentPlayer);
+                //Space move = ai.GetBestMove(game.Board, Piece.Type.White);
+                Space move = game.GetMove(currentPlayer);
 
                 if (game.Board.IsValidMove(move, currentPlayer))
                 {

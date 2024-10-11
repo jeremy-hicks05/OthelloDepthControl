@@ -11,7 +11,7 @@ namespace OthelloAStar
         internal class OthelloAI
         {
             private bool UseAlphaBetaPruning = true;
-            private int MaxDepth = 7;
+            private int MaxDepth = 4;
             int alpha = int.MinValue;
             int beta = int.MaxValue;
             public Piece.Type AIColor { get; set; }
